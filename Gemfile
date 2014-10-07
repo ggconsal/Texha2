@@ -7,6 +7,9 @@ gem 'rails', '4.1.5'
 group :production do
 	# Use postgresql as database
 	gem 'pg'
+	gem 'rails_12factor'
+	# Use unicorn as the app server
+	gem 'unicorn'
 end
 
 group :test, :development do
@@ -32,10 +35,6 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'bootstrap-sass', '~> 3.1.1.1'
 gem 'momentjs-rails', '~> 2.5.0'
-gem 'rails_12factor'
-
-# Use unicorn as the app server
-gem 'unicorn'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
