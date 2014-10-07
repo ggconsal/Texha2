@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Texha Argentina</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+	<meta name="description" content="" />
+	<meta name="author" content="Texha Argentina" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+  <script>
+	  function showhide() {
+	    var div = document.getElementById("newpost");
+			if (div.style.display !== "none") {
+				div.style.display = "none";
+			}
+			else {
+				div.style.display = "block";
+			}
+	  }
+	</script>
+        
+</head>
+
+<body>
+
+  <div class="logocontainer"> <!-- logo start -->
+  	<div class="row">
+	  	<h3 class="col-md-3"><%= image_tag "texhagris.jpg" %></h3>
+      <div id="logo" class="templatemo_smalltitle col-md-4">
+      	Soluciones Tecnologicas Simples
+      </div>
+    </div>
+  </div> <!-- logo end -->    
+	<div class="container" style="margin-left: 0px; padding-left: 0px;">
+	  <div class="row">
+      <div class="col-sm-1">
+        <div class="sidebar-nav-fixed affix" style="width: 40px;">
+          <div class="well" style="padding-left: 3px;padding-right: 3px;padding-top: 10px;padding-bottom: 0px;background: rgba(0, 0, 0, 0);border:0px">
+            <ul class="nav">
+	            <li class="nav-header" style="margin-bottom: 10px;">
+	            	<a href="mailto:info@texhaarg.com" target="_blank" style="padding: 0px;background: rgba(0,0,0,0)">
+	            	<%= image_tag "email_32.png" %>
+	            	</a>
+	            </li>
+	            <div class="clear"></div>
+	            <li class="nav-header" style="margin-bottom: 10px;">
+	            	<a href="http://www.linkedin.com/company/3374515?trk=tyah&amp;trkInfo=tas%3Atexha%20%2Cidx%3A1-2-2" target="_blank" style="padding: 0px;background: rgba(0,0,0,0)">
+	            		<%= image_tag "linkedin_32.png" %></i>
+	            	</a>
+	            </li>
+	            <div class="clear"></div>
+	            <li class="nav-header" style="margin-bottom: 10px;">
+	            	<a href="http://www.facebook.com/texhaarg" target="_blank"  style="padding: 0px;background: rgba(0,0,0,0)">
+	            		<%= image_tag "facebook_32.png" %></i>
+	            	</a>
+	            </li>
+	            <div class="clear"></div>
+	            <li class="nav-header" style="margin-bottom: 10px;">
+	            	<a href="http://www.twitter.com/texhaarg" target="_blank"  style="padding: 0px;background: rgba(0,0,0,0)">
+	            		<%= image_tag "twitter_32.png" %></i>
+	            	</a>
+	            </li>
+	          </ul>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+  <div id="menu-container" class="main_menu">
+		<%= yield %>
+	</div>
+
+	<div class="logocontainer"> <!-- logo start -->
+		<div class="row">
+	    <div class="templatemo_footer">
+	    	Copyright © 2014 Texha Argentina
+	    </div>
+	  </div>
+	</div> <!-- logo end -->  
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#horizontalTab').easyResponsiveTabs({
+	      type: 'default', //Types: default, vertical, accordion
+	      width: 'auto', //auto or any width like 600px
+	      fit: true, // 100% fit in a container
+	      closed: 'accordion', // Start closed if in accordion view
+	      activate: function(event) { // Callback function if tab is switched
+	        var $tab = $(this);
+	        var $info = $('#tabInfo');
+	        var $name = $('span', $info);
+
+	        $name.text($tab.text());
+
+	        $info.show();
+			
+	        }
+        });
+
+      $('#ab').easyResponsiveTabs({
+	      type: 'vertical',
+	      width: 'auto',
+	      fit: true,
+      });
+		
+
+			$('#cmt').easyResponsiveTabs({
+	      type: 'vertical',
+	      width: 'auto',
+	      fit: true,
+        });
+    });
+	</script>
+
+</body>
+
+</html>

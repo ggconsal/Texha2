@@ -1,0 +1,4 @@
+$('#msgOK').html("<%= j (render 'messageOK') %>");
+$('#msgOKbtn').fadeOut(500, function () {
+	$('#msgOK').fadeIn(1000);
+});
