@@ -39,10 +39,10 @@
                 if (!plugin.lightbox) {
                     $('body').append(
                       '<div id="lightbox" style="display:none;">'+
-                      '<a href="#" class="lightbox-close lightbox-button"></a>' +
+                      '<a href="#" class="lightbox-close glyphicon glyphicon-remove-circle lightbox-button" style="font-size: 45px;color:#400000;"></a>' +
                       '<div class="lightbox-nav">'+
-                      '<a href="#" class="lightbox-previous lightbox-button"></a>' +
-                      '<a href="#" class="lightbox-next lightbox-button"></a>' +
+                      '<a href="#" class="lightbox-previous glyphicon glyphicon-backward lightbox-button" style="font-size: 45px;color:#400000;"></a>' +
+                      '<a href="#" class="lightbox-next glyphicon glyphicon-forward lightbox-button" style="font-size: 45px;color:#400000;"></a>' +
                       '</div>' +
                       '<div href="#" class="lightbox-caption"><p></p></div>' +
                       '</div>'

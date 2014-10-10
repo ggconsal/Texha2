@@ -85,19 +85,19 @@ body.blurred > * {
 .lightbox-close {
   right: 30px;
   top: 30px;
-  background-image: url("/assets/close.png");
+  background-image: url("assets/close.png");
 }
 
 .lightbox-next {
   right: 30px;
   top: 48%;
-  background-image: url("/assets/next.png");
+  background-image: url("assets/next.png");
 }
 
 .lightbox-previous {
   left: 30px;
   top: 48%;
-  background-image: url("/assets/previous.png");
+  background-image: url("assets/previous.png");
 }
 
 /***********************************************************************
