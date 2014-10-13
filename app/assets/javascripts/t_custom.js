@@ -81,6 +81,23 @@ jQuery(document).ready(function($){
     return false;
   });
 
+  $('#new_contact').on("submit", function () {
+    var opts = {
+      lines: 17, // la cantidad de líneas
+      length: 23, // el tamaño de cada línea
+      width: 6, // el grosor de las líneas
+      radius: 8, // el radio del círculo
+      corner: 1,
+      rotate: 0,
+      trail: 87, // el efecto luminosidad
+      speed: 1, // la velocidad
+      shadow: false, // habilitar o deshabilitar las sombras
+      Hwaccel: false,
+      color: '#300000' // el color en formato RGB
+    };
+
+    new Spinner(opts).spin(document.getElementById('msgOKbtn'));
+  });
 
   /************** Gallery Hover Effect *********************/
   $(".overlay").hide();

@@ -12,11 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require spin
 //= require bootstrap
 //= require turbolinks
 //= require jquery-1.10.2.min
 //= require jquery.lightbox
 //= require t_custom
 //= require easyResponsiveTabs
-
-
