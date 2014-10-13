@@ -85,7 +85,7 @@ jQuery(document).ready(function($){
     var opts = {
       lines: 17, // la cantidad de líneas
       length: 23, // el tamaño de cada línea
-      width: 6, // el grosor de las líneas
+      width: 1, // el grosor de las líneas
       radius: 8, // el radio del círculo
       corner: 1,
       rotate: 0,
