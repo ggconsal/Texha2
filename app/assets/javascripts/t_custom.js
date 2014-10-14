@@ -76,11 +76,6 @@ jQuery(document).ready(function($){
     return false;
   });
 
-  $("#liestra").click(function(){
-    $('#divcostos').hide;
-    return false;
-  });
-
   $('#new_contact').on("submit", function () {
     $('#msgOKbtn').fadeOut(500);
     var opts = {
