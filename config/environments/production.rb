@@ -67,7 +67,7 @@ Rails.application.configure do
 
   config.action_mailer.smtp_settings = {
     address:              'texhaarg.com',
-    port:                 25,
+    port:                 465,
     domain:               'www.texhaarg.com',
     user_name:            'gconsal@texhaarg.com',
     password:             'Pipoto25',
