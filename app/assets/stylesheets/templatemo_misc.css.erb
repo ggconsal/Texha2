@@ -27,7 +27,7 @@ body.blurred > * {
 }
 
 .lightbox-loading {
-  background: url(/assets/loading.gif) center center no-repeat;
+  background: url(<%= asset_path "loading.gif" %>) center center no-repeat;
   width: 31px;
   height: 31px;
   margin: -16px 0 0 -16px;
@@ -127,7 +127,7 @@ body.blurred > * {
 * markup.
 *******************************************************/
 .ls-preloader {
-  background: url(/assets/loading.gif) #f2f2f2 no-repeat center 75px;
+  background: url(<%= asset_path "loading.gif" %>) #f2f2f2 no-repeat center 75px;
   opacity: 1;
   /* Do not edit below this line */
   width: 100%;
@@ -299,7 +299,7 @@ body.blurred > * {
   width: 100%;
   height: 35px;
   overflow: hidden;
-  background: url(/assets/menu.png) no-repeat right #dddddd;
+  background: url(<%= asset_path "menu.png" %>) no-repeat right #dddddd;
 }
 
 .ls-wrapper .ls-select-box select {
@@ -361,7 +361,7 @@ body.blurred > * {
 .ls-wrapper .ls-nav-right-arrow {
   width: 25px;
   height: 25px;
-  background: url(/assets/arrow.png) no-repeat top right;
+  background: url(<%= asset_path "arrow.png" %>) no-repeat top right;
   margin-top: 50px;
   margin-right: 5px;
   /* Do not edit below this line */
@@ -371,7 +371,7 @@ body.blurred > * {
 .ls-wrapper .ls-nav-left-arrow {
   width: 25px;
   height: 25px;
-  background: url(/assets/arrow.png) no-repeat top left;
+  background: url(<%= asset_path "arrow.png" %>) no-repeat top left;
   margin-top: 50px;
   margin-left: 5px;
   /* Do not edit below this line */
@@ -380,7 +380,7 @@ body.blurred > * {
 
 .ls-wrapper .ls-nav-left-arrow:hover {
   /* Left graphical arrows hover */
-  background: url(/assets/arrow.png) no-repeat bottom left;
+  background: url(<%= asset_path "arrow.png" %>) no-repeat bottom left;
 }
 
 .ls-wrapper .ls-nav-left-arrow:active {
@@ -389,7 +389,7 @@ body.blurred > * {
 
 .ls-wrapper .ls-nav-right-arrow:hover {
   /* Right graphical arrows hover */
-  background: url(/assets/arrow.png) no-repeat bottom right;
+  background: url(<%= asset_path "arrow.png" %>) no-repeat bottom right;
 }
 
 .ls-wrapper .ls-nav-right-arrow:active {
@@ -496,7 +496,7 @@ body.blurred > * {
   }
 
   .ls-responsive .liquid-slider .panel .panel-wrapper {
-    padding: 20px 35px;
+    /* padding: 20px 35px; */
   }
 }
 /******************************************************************
