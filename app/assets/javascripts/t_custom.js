@@ -82,6 +82,7 @@ jQuery(document).ready(function($){
   });
 
   $('#new_contact').on("submit", function () {
+    $('#msgOKbtn').fadeOut(500);
     var opts = {
       lines: 17, // la cantidad de líneas
       length: 23, // el tamaño de cada línea
@@ -96,7 +97,7 @@ jQuery(document).ready(function($){
       color: '#300000' // el color en formato RGB
     };
 
-    new Spinner(opts).spin(document.getElementById('msgOKbtn'));
+    new Spinner(opts).spin(document.getElementById('msgOK'));
   });
 
   /************** Gallery Hover Effect *********************/
