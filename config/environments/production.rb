@@ -20,7 +20,7 @@ Rails.application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.serve_static_assets = false
+  # config.serve_static_assets = false
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -65,17 +65,27 @@ Rails.application.configure do
   # config.action_mailer.raise_delivery_errors = false
   config.action_mailer.delivery_method = :smtp
 
-  config.action_mailer.smtp_settings = {
-    address:              'texhaarg.com',
-    port:                 465,
-    domain:               'www.texhaarg.com',
-    user_name:            'gconsal@texhaarg.com',
-    password:             'Pipoto25',
-    authentication:       'login',
-    enable_starttls_auto: false,
-    openssl_verify_mode:  'client_once' 
-  }
+  #config.action_mailer.perform_deliveries = true
 
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'texhaarg.com',
+    user_name:            "gconsal@gmail.com",
+    password:             "pipoto25",
+    authentication:       'plain',
+    enable_starttls_auto: true  }
+
+#  config.action_mailer.smtp_settings = {
+#    address:              'texhaarg.com',
+#    port:                 465,
+#    domain:               'www.texhaarg.com',
+#    user_name:            'gconsal@texhaarg.com',
+#    password:             'Pipoto25',
+#    authentication:       'login',
+#    enable_starttls_auto: false,
+#    openssl_verify_mode:  'client_once' 
+#  }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
