@@ -15,63 +15,63 @@ jQuery(document).ready(function($){
 
   $(".main_menu a.templatemo_homeservice").click(function(){
     $("#menu-container .portfolio").hide();
-    $('#menu-container .services').fadeOut(1000, function(){
-        $('#menu-container .homepage').fadeIn(1000);
+    $('#menu-container .services').fadeOut(500, function(){
+        $('#menu-container .homepage').fadeIn(500);
       });
     return false;
   });
   
   $(".main_menu a.templatemo_page2").click(function( ){
-    $('#menu-container .homepage').fadeOut(1000, function(){                    
-        $('#menu-container .services').fadeIn(1000);
+    $('#menu-container .homepage').fadeOut(500, function(){                    
+        $('#menu-container .services').fadeIn(500);
       });
   return false;
   });
   
   $(".main_menu a.templatemo_homeportfolio").click(function(){
-    $('#menu-container .portfolio').fadeOut(1000, function(){
-        $('#menu-container .homepage').fadeIn(1000);
+    $('#menu-container .portfolio').fadeOut(500, function(){
+        $('#menu-container .homepage').fadeIn(500);
       });
     return false;
   });
 
   $(".main_menu a.templatemo_page3").click(function(){    
-    $('#menu-container .homepage').fadeOut(1000, function(){
-        $('#menu-container .portfolio').fadeIn(1000);
+    $('#menu-container .homepage').fadeOut(500, function(){
+        $('#menu-container .portfolio').fadeIn(500);
       });
     return false;
   });
   
   $(".main_menu a.templatemo_hometestimonial").click(function(){
-    $('#menu-container .testimonial').fadeOut(1000, function(){
-        $('#menu-container .homepage').fadeIn(1000);
+    $('#menu-container .testimonial').fadeOut(500, function(){
+        $('#menu-container .homepage').fadeIn(500);
       });
     return false;
   });
   
   $(".main_menu a.templatemo_page4").click(function(){    
-    $('#menu-container .homepage').fadeOut(1000, function(){
-        $('#menu-container .testimonial').fadeIn(1000);
+    $('#menu-container .homepage').fadeOut(500, function(){
+        $('#menu-container .testimonial').fadeIn(500);
       });
     return false
   });
   $(".main_menu a.templatemo_homeabout").click(function(){
-    $('#menu-container .about').fadeOut(1000, function(){
-        $('#menu-container .homepage').fadeIn(1000);
+    $('#menu-container .about').fadeOut(500, function(){
+        $('#menu-container .homepage').fadeIn(500);
       });
     return false;
   });
 
   $(".main_menu a.templatemo_page5").click(function(){    
-    $('#menu-container .homepage').fadeOut(1000, function(){
-        $('#menu-container .about').fadeIn(1000);
+    $('#menu-container .homepage').fadeOut(500, function(){
+        $('#menu-container .about').fadeIn(500);
       });
     return false;
   });
   
   $(".main_menu a.templatemo_homecontact").click(function(){
-    $('#menu-container .contact').fadeOut(1000, function(){
-        $('#menu-container .homepage').fadeIn(1000);
+    $('#menu-container .contact').fadeOut(500, function(){
+        $('#menu-container .homepage').fadeIn(500);
       });
     return false;
   });

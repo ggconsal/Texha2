@@ -21,18 +21,18 @@ class ContactsController < ApplicationController
 
     Notifier.email_message(@contact.subject, @contact.mensaje, @contact.email, @contact.nombre).deliver
   end
-
+  
   def edit
     @contact = Contact.find(params[:id])
   end
-
+  
   def update
     @contacts = Contact.all
     @contact = Contact.find(params[:id])
 
     @contact.update_attributes(contact_params)
   end
-
+  
   def delete
     @contact = Contact.find(params[:id])
   end
