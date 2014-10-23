@@ -15,19 +15,19 @@
   <% end %>
 
   <div id="form-new" class="form-group has-success has-feedback">
-    <%= f.text_field :nombre, :placeholder => "Ingrese su Nombre...", :class=>"form-control", autofocus: true %>
+    <%= f.text_field :nombre, :required => true, :placeholder => "Ingrese su Nombre...", :class=>"form-control", autofocus: true %>
   </div>
 
   <div id="form-new" class="form-group has-success has-feedback">
-    <%= f.email_field :email, :placeholder => "Ingrese su email...", :class=>"form-control" %>
+    <%= f.email_field :email, :required => true, :placeholder => "Ingrese su email...", :class=>"form-control" %>
   </div>
 
   <div id="form-new" class="form-group has-success has-feedback">
-    <%= f.text_field :subject, :placeholder => "Ingrese el tema de interes...", :class=>"form-control", autofocus: true %>
+    <%= f.text_field :subject, :required => true, :placeholder => "Ingrese el tema de interes...", :class=>"form-control", autofocus: true %>
   </div>
 
   <div id="form-new" class="form-group has-success has-feedback">
-    <%= f.text_area :mensaje, :placeholder => "Ingrese su Mensaje...", :class=>"form-control", :style=>'width:100%' %>
+    <%= f.text_area :mensaje, :required => true, :placeholder => "Ingrese su Mensaje...", :class=>"form-control", :style=>'width:100%' %>
   </div>
   
   <div id="form-new" class="form-group has-success has-feedback">

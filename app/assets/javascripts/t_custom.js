@@ -64,7 +64,9 @@ jQuery(document).ready(function($){
 
   $(".main_menu a.templatemo_page5").click(function(){    
     $('#menu-container .homepage').fadeOut(500, function(){
-        $('#menu-container .about').fadeIn(500);
+        $('#menu-container .about').fadeIn(500, function(){
+          $("#ab").scrollTop(0);
+        });
       });
     return false;
   });
